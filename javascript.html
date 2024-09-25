@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operadores</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script>
+        function calcular(){
+            //leer los datos de las caja de text
+         let xn1 = parseInt(document.getElementById('txtNum1').value);
+         let xn2 = parseInt(document.getElementById('txtNum2').value);
+         if (xn1 > 0 && xn2 > 0){
+         //Proceso
+         let xresiduo = xn1 % xn2;
+         //Mostrar datos
+         if (xresiduo == 0){
+            document.getElementById('txtRes').value="El numero 1 es divisible por 2";
+            }else{
+            document.getElementById('txtRes').value="El numero 1 NO es divisible por 2";
+            }
+
+            }
+        }
+        function nuevo(){
+            document.getElementById('txtNum1').value="";
+            document.getElementById('txtNum2').value="";
+            document.getElementById('txtRes').value="";
+            document.getElementById('txtNum1').Focus();
+        }
+    </script>
+</head>
+<body>
+    <h1>operador modulo - %</h1>
+    <div style="text-align:center ;">
+        <a href="https://www.certus.edu.pe/">
+        <img width="200px" src="https://www.certus.edu.pe/wp-content/uploads/2018/12/certus-logo-1-01-copy-3@2x.png" alt="">
+        </a>
+    </div>
+    <hr>
+    <table>
+        <caption>DIVISIBILIDAD</caption>
+        <tr>
+            <td>Numero 1</td>
+            <td>
+                <input type="text" id="txtNum1">
+            </td>
+        </tr>
+        <tr>
+            <td>Numero 2</td>
+            <td>
+                <input type="text" id="txtNum2">
+            </td>
+        </tr>
+        <tr>
+            <td>Resultado</td>
+            <td>
+                <input type="text" id="txtRes" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" onclick="calcular()"; value="calcular">
+            </td>
+            <td>
+                <input type="button" onclick="Nuevo()"; value="Nuevo">
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>

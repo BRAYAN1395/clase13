@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+    <style>
+        button{
+            width: 350px; background-color: black;color: chartreuse;
+            padding: 20px;cursor: pointer; border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabajando con imagenes</h1>
+    <hr>
+    <div style="text-align:center ;">
+        <img src="img/Libro.png" height="150px" alt="" id="imagen">
+        <br>
+        <button onclick="cargar();">cargar imagen</button>
+    </div>
+    <script>
+        function cargar(){
+            document.getElementById("imagen").src = "img/AGYA.png"
+        }
+    </script>
+    
+</body>
+</html>

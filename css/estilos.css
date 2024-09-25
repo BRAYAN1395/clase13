@@ -1,0 +1,23 @@
+h1{
+    text-align: center; color: blue; font-weight: bold;
+}
+hr{
+    height:10px; 
+    background-color: blue; 
+}
+caption{
+    background-color: lightskyblue;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+table{
+    margin: auto; width: 40%;
+}
+input[type=text]{
+    padding: 10px;
+}
+input[type=button]{
+    padding: 10px;background-color: black;color: chartreuse;
+    cursor: pointer;width: 150px;border-radius: 10px;
+}
